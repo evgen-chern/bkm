@@ -2802,6 +2802,85 @@ body.compensate-for-scrollbar {
   background: #7EB67D;
 }
 
+.wrapper .breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 0;
+}
+
+.wrapper .breadcrumbs li {
+  margin-left: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .breadcrumbs li:before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 10px;
+  background: #5F6975;
+  margin-right: 25px;
+}
+
+.wrapper .breadcrumbs li:first-child {
+  margin-left: 0;
+}
+
+.wrapper .breadcrumbs li:first-child:before {
+  content: none;
+}
+
+.wrapper .breadcrumbs li a {
+  font-size: 14px;
+  line-height: 19px;
+  color: #5F6975;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.wrapper .breadcrumbs li a:hover {
+  text-decoration-line: underline;
+}
+
+.wrapper .error_404 {
+  padding: 75px 0 140px 0;
+}
+
+.wrapper .error_404 img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 610px;
+}
+
+.wrapper .error_404 a {
+  display: block;
+  margin: 30px auto 0 auto;
+  padding: 15px 50px;
+  width: 100%;
+  max-width: 255px;
+  background: #5F6975;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #F2F2F2;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.wrapper .error_404 a:hover {
+  background: #7EB67D;
+}
+
 @media all and (max-width: 1441px) {
   .wrapper main .main_slider .lSSlideOuter .lSPager {
     right: 11%;
@@ -3082,6 +3161,10 @@ body.compensate-for-scrollbar {
   .wrapper .popup-content .info_wrapper .content .element.prop {
     font-size: 16px;
     line-height: 22px;
+  }
+
+  .wrapper .breadcrumbs {
+    padding: 15px 0;
   }
 }
 
